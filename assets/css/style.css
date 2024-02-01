@@ -76,6 +76,10 @@ p {
 header {
     background-color: var(--resp-primary);
     padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 
     & nav {
         display: flex;
@@ -113,7 +117,7 @@ header {
 /* Demo Section ------------------------------------------> */
 
 #demo {
-    padding-top: 2rem;
+    padding-top: 6rem;
     padding-bottom: 4rem;
 
     & .col-12:first-child .card {
