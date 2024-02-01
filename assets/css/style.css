@@ -246,8 +246,16 @@ header {
 
 @media screen and (min-width: 996px) {
 
+    .col-md-4 {
+        width: calc((100% / 12) * 4);
+    }
+
     .col-md-6 {
         width: 50%;
+    }
+
+    .col-md-8 {
+        width: calc((100% / 12) * 8);
     }
 
     #demo {
@@ -269,6 +277,11 @@ header {
 
 
     }
+
+
+}
+
+@media screen and (min-width: 1200px) {
 
     #planning {
         & .container-md {
@@ -311,22 +324,10 @@ header {
         }
     }
 
-}
-
-@media screen and (min-width: 1200) {
-
-
-
-
-    .col-lg-4 {
-        width: calc((100% / 12) * 4);
-    }
 
     .col-lg-6 {
         width: 50%;
     }
 
-    .col-lg-12 {
-        width: 100%;
-    }
+
 }
