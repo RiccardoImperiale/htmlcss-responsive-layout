@@ -24,25 +24,41 @@ ul {
 
 a {
     text-decoration: none;
+    color: var(--resp-lighter);
 }
 
 /* Utilities */
 
 .container {
     width: 80%;
-    max-width: 1176px;
+    /* max-width: 1176px; */
+    max-width: 1200px;
     margin: auto
 }
 
 .btn {
-    padding: .5rem .8rem;
-    border-radius: 1rem;
+    padding: .6rem .8rem;
+    border-radius: 2rem;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -1rem
+    margin: 0 -1rem;
+}
+
+.card {
+    border-radius: 1rem;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+[class^="col-"] {
+    padding: 1rem;
+}
+
+.col-12 {
+    width: 100%;
 }
 
 /* Header ------------------------------------------> */
@@ -74,12 +90,125 @@ header {
         }
 
         & .nav_links li:last-child {
-
             background-color: var(--resp-lighter);
 
             & a {
                 color: var(--resp-darker);
             }
         }
+    }
+}
+
+/* Demo Section ------------------------------------------> */
+
+#demo {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+
+    & .col-12:first-child .card {
+        padding-bottom: 0;
+        text-align: left;
+
+        & p {
+            margin-bottom: 2rem;
+        }
+    }
+
+    & .card {
+
+        background-color: var(--resp-primary-light);
+        text-align: center;
+
+        & .card_text {
+
+            & h4 {
+                font-size: 1.4rem;
+                color: var(--resp-primary);
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            & p {
+                color: var(--resp-darker);
+                line-height: 1.5rem;
+                opacity: 0.8;
+            }
+
+            & a {
+                background-color: var(--resp-primary);
+                letter-spacing: .2rem;
+                padding-inline: 3rem;
+
+                & i {
+                    color: var(--resp-lighter);
+                    font-size: 1rem;
+                }
+            }
+
+            & i {
+                color: var(--resp-primary);
+                font-size: 5rem;
+            }
+        }
+
+        & .card_image {
+            margin-top: 2rem;
+
+            & img {
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .col-sm-4 {
+        width: calc((100% / 12) * 4);
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+
+    .col-sm-8 {
+        width: calc((100% / 12) * 8);
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 996px) {
+
+    /* .col-md-4 {
+        width: calc((100% / 12) * 4);
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    } */
+}
+
+@media screen and (min-width: 1200) {
+
+    .col-lg-4 {
+        width: calc((100% / 12) * 4);
+    }
+
+    .col-lg-6 {
+        width: 50%;
+    }
+
+    .col-lg-12 {
+        width: 100%;
     }
 }
