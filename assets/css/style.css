@@ -8,6 +8,24 @@
     --resp-warning: #FDC15F;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* Utilities */
 
 .container {
@@ -16,8 +34,52 @@
     margin: auto
 }
 
+.btn {
+    padding: .5rem .8rem;
+    border-radius: 1rem;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -1rem
+}
+
+/* Header ------------------------------------------> */
+
+header {
+    background-color: var(--resp-primary);
+    padding: 1rem;
+
+    & nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & i {
+            display: block;
+            color: var(--resp-lighter);
+            font-size: 1.5rem;
+        }
+
+        & .nav_links {
+            display: none;
+            /* display: flex; */
+            align-items: center;
+            gap: 2rem;
+
+            & a {
+                color: var(--resp-lighter);
+            }
+        }
+
+        & .nav_links li:last-child {
+
+            background-color: var(--resp-lighter);
+
+            & a {
+                color: var(--resp-darker);
+            }
+        }
+    }
 }
