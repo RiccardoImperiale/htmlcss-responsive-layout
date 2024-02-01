@@ -1,0 +1,23 @@
+:root {
+    --resp-lighter: #FFFFFF;
+    --resp-darker: #111111;
+    --resp-dark: #333333;
+    --resp-primary: #0084FD;
+    --resp-primary-light: #B5DDFF;
+    --resp-secondary: #9792E4;
+    --resp-warning: #FDC15F;
+}
+
+/* Utilities */
+
+.container {
+    width: 80%;
+    max-width: 1176px;
+    margin: auto
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem
+}
