@@ -371,6 +371,12 @@ header {
 
 }
 
+ul .nav_links {
+    /* display: none; */
+    display: flex;
+}
+
+
 @media screen and (min-width: 1200px) {
 
     #planning {
@@ -414,10 +420,20 @@ header {
         }
     }
 
+    header {
+        & nav {
+            & #nav_close {
+                display: none;
+            }
+
+            & .nav_links {
+                display: flex;
+            }
+        }
+    }
 
     .col-lg-6 {
         width: 50%;
     }
-
 
 }
