@@ -279,9 +279,113 @@ header {
     }
 }
 
+/* Benefits Section ------------------------------------------> */
 
+#benefits {
+    padding: 4rem 0;
+    background-color: var(--resp-secondary);
 
+    & .text {
+        text-align: center;
+        margin-bottom: 2rem;
 
+        & h3 {
+            color: var(--resp-lighter);
+            font-size: 2rem;
+        }
+    }
+
+    & .card {
+        background-color: var(--resp-lighter);
+        color: var(--resp-secondary);
+
+        & .big_number {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        & h4 {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+
+        & p {
+            color: var(--resp-darker);
+        }
+
+        & a {
+            display: inline-block;
+            background-color: var(--resp-secondary);
+            padding-inline: 3rem;
+            margin-top: 1rem;
+        }
+    }
+}
+
+/* About Us Section --------------------------------------------> */
+#about_us {
+    padding: 4rem 0;
+
+    & .text {
+        text-align: left;
+        margin-bottom: 2rem;
+
+        & h2 {
+            color: var(--resp-secondary);
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+
+        }
+
+        & p:last-child {
+            margin-top: 2rem;
+        }
+    }
+
+    & .image {
+        width: 280px;
+        overflow: hidden;
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        & i {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 5rem;
+            color: var(--resp-secondary);
+        }
+    }
+
+    & .quote {
+        & h3 {
+            color: var(--resp-secondary);
+            line-height: 1.4;
+            margin-top: 1rem;
+            font-size: 2rem;
+
+        }
+
+        & a {
+            display: inline-block;
+            background-color: var(--resp-secondary);
+            margin-top: 1rem;
+            padding-inline: 1.5rem;
+        }
+
+        & i {
+            margin-right: .25rem;
+        }
+    }
+}
 
 
 
@@ -308,6 +412,10 @@ header {
 }
 
 @media screen and (min-width: 996px) {
+
+    .col-md-3 {
+        width: calc((100% / 12) * 3);
+    }
 
     .col-md-4 {
         width: calc((100% / 12) * 4);
@@ -369,6 +477,25 @@ header {
         }
     }
 
+    #about_us {
+        & .text {
+            padding-right: 3rem;
+        }
+
+        & .image {
+            width: 100%;
+
+            & i {
+                font-size: 4rem;
+            }
+        }
+
+        & .quote {
+            & h3 {
+                font-size: 1.5rem;
+            }
+        }
+    }
 }
 
 ul .nav_links {
@@ -420,6 +547,28 @@ ul .nav_links {
         }
     }
 
+    #about_us {
+        & .text {
+            padding-right: 3rem;
+        }
+
+        & .image {
+            width: 300px;
+     
+
+            & i {
+                font-size: 4rem;
+            }
+        }
+
+        & .quote {
+            & h3 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+
     header {
         & nav {
             & #nav_close {
@@ -430,6 +579,10 @@ ul .nav_links {
                 display: flex;
             }
         }
+    }
+
+    .col-lg-4 {
+        width: calc((100% / 12) * 4);
     }
 
     .col-lg-6 {
