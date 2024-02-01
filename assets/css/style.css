@@ -46,6 +46,12 @@ p {
     margin: auto
 }
 
+.container-sm {
+    width: 80%;
+    max-width: 700px;
+    margin: auto
+}
+
 .btn {
     padding: .6rem .8rem;
     border-radius: 2rem;
@@ -400,7 +406,6 @@ header {
 
     & .text {
         text-align: center;
-        margin-bottom: 2rem;
 
         & h3 {
             color: var(--resp-lighter);
@@ -416,14 +421,13 @@ header {
 
         & p {
             margin: 2rem auto;
-            max-width: 800px;
         }
 
         & .btn {
             background-color: var(--resp-lighter);
             display: inline-block;
             color: var(--resp-secondary);
-            padding: 2rem 5rem;
+            padding: 1.5rem 5rem;
             margin-bottom: 2rem;
             border-radius: 5rem;
         }
@@ -442,15 +446,32 @@ header {
                 margin: 0 .4rem;
             }
         }
-
-
-
-
     }
-
-
 }
 
+/* Footer Section ------------------------------------------> */
+
+footer {
+    padding: 4rem 0;
+    background-color: var(--resp-dark);
+    text-align: center;
+    color: var(--resp-lighter);
+    font-size: .8rem;
+
+    & .top {
+        opacity: .75;
+    }
+
+    & .bottom {
+        opacity: .75;
+        margin-top: 3rem;
+
+        & a {
+            color: var(--resp-secondary);
+            text-decoration: underline;
+        }
+    }
+}
 
 
 
