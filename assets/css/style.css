@@ -185,6 +185,25 @@ header {
 
 @media screen and (min-width: 996px) {
 
+    #demo {
+        & .col-12:first-child .card {
+            display: flex;
+
+            & .card_text {
+                width: 50%;
+            }
+
+            & .card_image {
+                padding: 2rem 2rem 0 2rem;
+                width: 50%;
+                vertical-align: bottom;
+                display: flex;
+                align-items: end;
+            }
+        }
+    }
+
+
     /* .col-md-4 {
         width: calc((100% / 12) * 4);
     }
@@ -199,6 +218,7 @@ header {
 }
 
 @media screen and (min-width: 1200) {
+
 
     .col-lg-4 {
         width: calc((100% / 12) * 4);
