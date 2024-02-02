@@ -40,7 +40,7 @@ p {
     font-size: 1.2rem;
 }
 
-/* Utilities */
+/* #region Utilities */
 
 .container {
     width: 80%;
@@ -85,6 +85,9 @@ p {
     width: 100%;
 }
 
+/* #endregion Utilities */
+
+
 /* Header ------------------------------------------> */
 
 header {
@@ -97,12 +100,12 @@ header {
     width: 100%;
     z-index: 1;
     transition: background-color 0.3s;
-   
 
     & nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        z-index: 0;
 
         & i {
             display: block;
@@ -127,6 +130,7 @@ header {
             align-items: flex-end;
             gap: 2rem;
             top: 4rem;
+
 
             & a {
                 color: var(--resp-lighter);
@@ -626,17 +630,6 @@ footer {
 /* 
 @media screen and (min-width: 992px) {
 
-    #about_us {
-
-        & .quote {
-
-            & .btn {
-            
-            
-            }
-        }
-    }
-
 } */
 
 @media screen and (min-width: 1200px) {
@@ -671,8 +664,6 @@ footer {
                     font-weight: 300;
                 }
             }
-
-          
         }
     }
 
