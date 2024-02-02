@@ -121,7 +121,7 @@ header {
         }
 
         & .nav_links {
-            z-index: -19;
+            z-index: -1;
             position: absolute;
             display: flex;
             flex-direction: column;
@@ -647,16 +647,23 @@ footer {
 
     header {
         z-index: 1;
+        /* transition: none; */
+        transition: background-color 0.3s;
 
         & nav {
             background-color: transparent;
             z-index: 0;
+            height: 4rem;
+            transition: none;
+            transition: background-color 0.3s;
+
 
             & #nav_close {
                 display: none;
             }
 
             & .nav_links {
+                transition: background-color 0.3s;
                 z-index: 1;
                 position: static;
                 background-color: transparent;
