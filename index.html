@@ -363,6 +363,20 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Header changes color once on the planning section 
+        window.addEventListener("scroll", function() {
+          let header = document.querySelector("header");
+          let secondPlanning = document.querySelector("#planning");
+    
+          if (window.scrollY >= secondPlanning.offsetTop - header.offsetHeight) {
+            header.style.backgroundColor = "#615bb7"; 
+          } else {
+            header.style.backgroundColor = "#0084FD"; 
+          }
+        });
+      </script>
 </body>
 
 </html>

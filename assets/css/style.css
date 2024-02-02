@@ -94,6 +94,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 1;
+    transition: background-color 0.3s;
 
     & nav {
         display: flex;
@@ -109,12 +110,12 @@ header {
 
         & .nav_links {
             display: none;
-            /* display: flex; */
             align-items: center;
             gap: 2rem;
 
             & a {
                 color: var(--resp-lighter);
+                font-weight: 300;
             }
         }
 
