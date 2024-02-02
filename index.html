@@ -376,16 +376,22 @@
 
             if (window.scrollY >= secondPlanning.offsetTop - header.offsetHeight) {
                 header.style.backgroundColor = "#615bb7";
-                navMenu.style.backgroundColor = "#494489";
+                if (!navMenu.classList.contains("active")){
+                    navMenu.style.backgroundColor = "#494489";
+                }
             } else {
                 header.style.backgroundColor = "#0084FD";
-                navMenu.style.backgroundColor = "#004688";
+                if (!navMenu.classList.contains("active")){
+                    navMenu.style.backgroundColor = "#004688";
+                }
             }
         });
 
         // Click on menu icon and show menu
         navToggleBtn.addEventListener("click", () => {
             navMenu.classList.toggle("active");
+            header.style.backgroundColor = "#fff";
+
         })
 
     </script>
