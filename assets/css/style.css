@@ -646,14 +646,18 @@ footer {
     }
 
     header {
+        z-index: 1;
+
         & nav {
             background-color: transparent;
+            z-index: 0;
 
             & #nav_close {
                 display: none;
             }
 
             & .nav_links {
+                z-index: 1;
                 position: static;
                 background-color: transparent;
                 justify-content: flex-end;
