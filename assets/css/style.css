@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "PT Sans", sans-serif;
 }
 
 ul {
@@ -475,8 +475,6 @@ footer {
 
 
 /* Responsive Styles  */
-
-
 
 @media screen and (min-width: 768px) {
 
