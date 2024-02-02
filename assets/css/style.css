@@ -101,21 +101,27 @@ header {
     z-index: 1;
     transition: background-color 0.3s;
 
+
     & nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         z-index: 0;
+        background-color: var(--resp-primary);
+        height: 4rem;
+        transition: background-color 0.3s;
+
 
         & i {
             display: block;
             color: var(--resp-lighter);
             font-size: 1.5rem;
             cursor: pointer;
+            padding: 1px;
         }
 
         & .nav_links {
-            z-index: -1;
+            z-index: -19;
             position: absolute;
             display: flex;
             flex-direction: column;
@@ -131,7 +137,6 @@ header {
             gap: 2rem;
             top: 4rem;
 
-
             & a {
                 color: var(--resp-lighter);
                 font-weight: 300;
@@ -139,8 +144,7 @@ header {
         }
 
         & .active {
-            top: -350px;
-
+            top: -450px;
         }
 
         & .nav_links li:last-child {
@@ -642,8 +646,9 @@ footer {
     }
 
     header {
-
         & nav {
+            background-color: transparent;
+
             & #nav_close {
                 display: none;
             }

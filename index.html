@@ -372,14 +372,17 @@
         // Header changes color once on the planning section 
         window.addEventListener("scroll", function () {
             let header = document.querySelector("header");
+            let nav = document.querySelector("nav");
             let secondPlanning = document.querySelector("#planning");
 
             if (window.scrollY >= secondPlanning.offsetTop - header.offsetHeight) {
                 header.style.backgroundColor = "#615bb7";
+                nav.style.backgroundColor = "#615bb7";
                 navMenu.style.backgroundColor = "#615bb7";
 
             } else {
                 header.style.backgroundColor = "#0084FD";
+                nav.style.backgroundColor = "#0084FD";
                 navMenu.style.backgroundColor = "#0084FD";
             }
         });
