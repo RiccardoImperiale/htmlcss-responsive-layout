@@ -22,14 +22,22 @@ ul {
     list-style: none;
 }
 
+h4 {
+    font-size: 1.6rem;
+}
+
 a {
     text-decoration: none;
     color: var(--resp-lighter);
+    font-weight: 700;
 }
 
 p {
     line-height: 1.6rem;
-    opacity: 0.8;
+}
+
+.section_title {
+    font-size: 1.2rem;
 }
 
 /* Utilities */
@@ -143,14 +151,15 @@ header {
         & .card_text {
 
             & h4 {
-                font-size: 1.4rem;
                 color: var(--resp-primary);
                 margin-top: 1rem;
                 margin-bottom: 2rem;
             }
 
             & p {
-                color: var(--resp-darker);
+                color: var(--resp-dark);
+                font-weight: 700;
+                opacity: 0.7;
             }
 
             & a {
@@ -193,7 +202,7 @@ header {
     }
 
     & h4 {
-        font-size: 1.4rem;
+        font-size: 2.2rem;
         margin: 2rem 0;
     }
 
@@ -202,11 +211,20 @@ header {
     }
 
     & .card {
+        border-radius: 3rem;
 
         background-color: var(--resp-lighter);
         text-align: center;
 
         & .card_text {
+
+            & h4 {
+                font-size: 1.65rem;
+            }
+
+            & p {
+                font-style: italic;
+            }
 
             & h4,
             p {
@@ -244,8 +262,13 @@ header {
 
         & h3 {
             color: var(--resp-secondary);
-            font-size: 2rem;
+            font-size: 2.2rem;
             margin: 2rem 0;
+        }
+
+        & p {
+            font-size: 1.2rem;
+            line-height: 2rem;
         }
     }
 
@@ -253,6 +276,7 @@ header {
         text-align: center;
         background-color: var(--resp-secondary);
         color: var(--resp-lighter);
+        border-radius: 3rem;
 
         & .image {
             margin: auto;
@@ -272,6 +296,8 @@ header {
 
         & p {
             margin: 2rem 0;
+            font-size: 1.2rem;
+            line-height: 2rem;
 
             & i {
                 position: relative;
@@ -284,6 +310,10 @@ header {
             & i:last-child {
                 top: .25rem;
             }
+        }
+
+        & h4 {
+            font-size: 1.4rem;
         }
 
     }
@@ -301,7 +331,7 @@ header {
 
         & h3 {
             color: var(--resp-lighter);
-            font-size: 2rem;
+            font-size: 2.2rem;
         }
     }
 
@@ -315,12 +345,13 @@ header {
         }
 
         & h4 {
-            font-size: 1.2rem;
+            font-size: 1.6rem;
             margin: 1rem 0;
         }
 
         & p {
             color: var(--resp-darker);
+            opacity: 0.6;
         }
 
         & a {
@@ -328,6 +359,7 @@ header {
             background-color: var(--resp-secondary);
             padding-inline: 3rem;
             margin-top: 1rem;
+            letter-spacing: .25rem;
         }
     }
 }
@@ -344,7 +376,12 @@ header {
             color: var(--resp-secondary);
             font-size: 3.5rem;
             margin-bottom: 2rem;
+        }
 
+        & p {
+            font-size: 1.2rem;
+            line-height: 2.5rem;
+            opacity: 0.8;
         }
 
         & p:last-child {
@@ -498,8 +535,14 @@ footer {
         & .col-12:first-child .card {
 
             & .card_image {
-                width: 60%;
+                width: 50%;
             }
+        }
+    }
+
+    #planning {
+        & .card {
+            border-radius: 1.5rem;
         }
     }
 
@@ -508,6 +551,7 @@ footer {
             display: flex;
             align-items: center;
             gap: 2rem;
+            border-radius: 1.5rem;
 
             & .image {
                 margin: auto;
@@ -547,6 +591,7 @@ footer {
         & .quote {
             & h3 {
                 font-size: 1.4rem;
+                padding-right: 0;
             }
 
             & .btn {
