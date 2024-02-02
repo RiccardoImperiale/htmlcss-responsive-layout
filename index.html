@@ -25,7 +25,7 @@
             <nav>
                 <img src="./assets/img/logo.png" alt="logo">
                 <i id="nav_close" class="fa-solid fa-bars"></i>
-                <ul class="nav_links">
+                <ul class="nav_links active">
                     <li><a href="#">Planning</a></li>
                     <li><a href="#">Testimonials</a></li>
                     <li><a href="#">Features</a></li>
@@ -366,17 +366,26 @@
 
     <script>
         // Header changes color once on the planning section 
-        window.addEventListener("scroll", function() {
-          let header = document.querySelector("header");
-          let secondPlanning = document.querySelector("#planning");
-    
-          if (window.scrollY >= secondPlanning.offsetTop - header.offsetHeight) {
-            header.style.backgroundColor = "#615bb7"; 
-          } else {
-            header.style.backgroundColor = "#0084FD"; 
-          }
+        window.addEventListener("scroll", function () {
+            let header = document.querySelector("header");
+            let secondPlanning = document.querySelector("#planning");
+
+            if (window.scrollY >= secondPlanning.offsetTop - header.offsetHeight) {
+                header.style.backgroundColor = "#615bb7";
+            } else {
+                header.style.backgroundColor = "#0084FD";
+            }
         });
-      </script>
+
+
+        // Click on menu icon and show menu
+        const navToggleBtn = document.querySelector('#nav_close');
+        const navMenu = document.querySelector('.nav_links');
+        navToggleBtn.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+        })
+
+    </script>
 </body>
 
 </html>
